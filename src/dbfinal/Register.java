@@ -20,17 +20,17 @@ import javafx.stage.Stage;
  *
  * @author HP
  */
-public class Client extends Application {
+public class Register extends Application {
     
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader loader=new FXMLLoader();
+         FXMLLoader loader=new FXMLLoader();
       
         loader.setController(new LoginPageController());
-        Parent root2 = FXMLLoader.load(getClass().getResource("client.fxml"));
+        Parent root2 = FXMLLoader.load(getClass().getResource("Register.fxml"));
         Scene scene2 = new Scene(root2);
         primaryStage.setScene(scene2);
-        primaryStage.setTitle("Main Screen");
+        primaryStage.setTitle("Register");
         primaryStage.show();
     }
 

@@ -23,7 +23,7 @@ import javafx.stage.Stage;
  * @author HP
  */
 public class DBconnection {
-  /*  public static Connection get_connection() throws Exception{
+    public static Connection get_connection() throws Exception{
         Connection conn = null;
         try{
             String driver = "com.mysql.cj.jdbc.Driver";
@@ -38,7 +38,8 @@ public class DBconnection {
            
         }
         return conn;
-    }*/
+    }
+    
     Stage stage;
     private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/ordersdesktop";
     private static final String driver = "com.mysql.cj.jdbc.Driver";

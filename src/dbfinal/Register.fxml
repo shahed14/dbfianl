@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="543.0" prefWidth="600.0" style="-fx-background-color: #99bcc4; -fx-font-weight: BOLD; -fx-font-size: 20; -fx-border-color: c76b3a; -fx-border-width: 10px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbfinal.RegisterController">
+   <children>
+      <Text layoutX="137.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Form" textAlignment="CENTER" wrappingWidth="289.13671875" />
+      <Label layoutX="123.0" layoutY="99.0" prefHeight="17.0" prefWidth="94.0" text="Name :" />
+      <Label layoutX="123.0" layoutY="174.0" prefHeight="17.0" prefWidth="94.0" text="Email :" />
+      <Label layoutX="118.0" layoutY="250.0" text="Mobile :" />
+      <Label layoutX="106.0" layoutY="322.0" text="Password :" />
+      <Label layoutX="130.0" layoutY="392.0" text="Role :" />
+      <TextField fx:id="nameTextFeild" layoutX="265.0" layoutY="92.0" prefHeight="25.0" prefWidth="269.0" />
+      <TextField fx:id="emailTextFeild" layoutX="265.0" layoutY="167.0" prefHeight="25.0" prefWidth="269.0" promptText="name@gmail.com" />
+      <TextField fx:id="mobileTextFeild" layoutX="265.0" layoutY="243.0" prefHeight="25.0" prefWidth="269.0" />
+      <TextField fx:id="passwordTextFeild" layoutX="265.0" layoutY="315.0" prefHeight="25.0" prefWidth="269.0" />
+      <TextField fx:id="RoleTextFeild" layoutX="265.0" layoutY="385.0" prefHeight="25.0" prefWidth="269.0" promptText="Client / Admin" />
+      <Button fx:id="RegisterButton" layoutX="265.0" layoutY="466.0" mnemonicParsing="false" onAction="#RegisterButton_handle" prefHeight="51.0" prefWidth="140.0" text="Register" />
+      <Button fx:id="ResetButton" layoutX="426.0" layoutY="466.0" mnemonicParsing="false" onAction="#ResetButton_handle" prefHeight="51.0" prefWidth="140.0" text="Reset" />
+   </children>
+</AnchorPane>

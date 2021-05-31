@@ -10,6 +10,8 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -103,7 +105,17 @@ public class LoginPageController implements Initializable {
 
     @FXML
     private void registerButton_handle(ActionEvent event) {
-       
+ try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/javafxcontrollercommunication/Admin/Admin.fxml"));
+            Parent root = loader.load();
+            AdminController admincontrooler = new AdminController();
+             Stage stage = new Stage();
+             stage.setScene(new Scene(root));
+             stage.setTitle("Admin");
+             stage.show();
+        } catch (IOException ex) {
+                 System.out.println(ex);
+        }   
     }
     
     
@@ -143,6 +155,19 @@ public class LoginPageController implements Initializable {
         alert.initOwner(owner);
         alert.show();
     }
-    
+   /* private void loadSecoundScnen(){
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/javafxcontrollercommunication/Admin/Admin.fxml"));
+            Parent root = loader.load();
+            AdminController admincontrooler = new AdminController();
+             Stage stage = new Stage();
+             stage.setScene(new Scene(root));
+             stage.setTitle("Admin");
+             stage.show();
+        } catch (IOException ex) {
+                 System.out.println(ex);
+        }
+  
+    }*/
      
 }
