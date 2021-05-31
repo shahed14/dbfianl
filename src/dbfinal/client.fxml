@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="603.0" prefWidth="600.0" style="-fx-background-color: #c76b3a; -fx-font-weight: BOLD; -fx-font-size: 20;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbfinal.ClientController">
+   <children>
+      <MenuBar prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: #99bcc4;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" onAction="#exitMenuItem_handle" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Format">
+            <items>
+              <MenuItem fx:id="fontSizeMenuItem" mnemonicParsing="false" onAction="#fontSizeMenuItem_handle" text="font size" />
+                  <MenuItem fx:id="fontColorMenuItem" mnemonicParsing="false" onAction="#fontColorMenuItem_handle" text="font color" />
+                  <MenuItem fx:id="fontFamilyMenuItem" mnemonicParsing="false" onAction="#fontFamilyMenuItem_handle" text="font family" />
+                  <MenuItem fx:id="backGroundMenuItem" mnemonicParsing="false" onAction="#backGroundMenuItem_handle" text="background color" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About app" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="registerButton" layoutX="11.0" layoutY="139.0" mnemonicParsing="false" onAction="#registerButton_handle" prefHeight="62.0" prefWidth="579.0" style="-fx-background-color: #08535d;" text="Register" textFill="#fffdfd" />
+      <Button fx:id="manageOrdersButton" layoutX="11.0" layoutY="227.0" mnemonicParsing="false" onAction="#manageOrdersButton_handle" prefHeight="62.0" prefWidth="579.0" style="-fx-background-color: #08535d;" text="Manage Orders" textFill="WHITE" />
+      <Button fx:id="profileButton" layoutX="11.0" layoutY="316.0" mnemonicParsing="false" onAction="#profileButton_handle" prefHeight="62.0" prefWidth="579.0" style="-fx-background-color: #08535d;" text="Profile" textFill="WHITE" />
+      <Button fx:id="changePasswordButton" layoutX="11.0" layoutY="406.0" mnemonicParsing="false" onAction="#changePasswordButton_handle" prefHeight="62.0" prefWidth="579.0" style="-fx-background-color: #08535d;" text="Change Password" textFill="WHITE" />
+      <Button fx:id="viewInvoicesButton" layoutX="11.0" layoutY="497.0" mnemonicParsing="false" onAction="#viewInvoicesButton_handle" prefHeight="62.0" prefWidth="579.0" style="-fx-background-color: #08535d;" text="View Invoices" textFill="WHITE" />
+      <Text layoutX="156.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client Dashboard" textAlignment="CENTER" wrappingWidth="254.3671875" />
+   </children>
+</AnchorPane>

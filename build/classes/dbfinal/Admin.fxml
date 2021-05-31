@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="600.0" style="-fx-background-color: #c76b3a; -fx-font-weight: BOLD; -fx-font-size: 20 14;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbfinal.AdminController">
+   <children>
+      <MenuBar prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: #99bcc4;">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="exitIMenuItem" mnemonicParsing="false" onAction="#exitIMenuItem_handle" text="exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Format">
+            <items>
+                  <MenuItem fx:id="fontSizeMenuItem" mnemonicParsing="false" onAction="#fontSizeMenuItem_handle" text="font size" />
+                  <MenuItem fx:id="fontColorMenuItem" mnemonicParsing="false" onAction="#fontColorMenuItem_handle" text="font color" />
+                  <MenuItem fx:id="fontFamilyMenuItem" mnemonicParsing="false" onAction="#fontFamilyMenuItem_handle" text="font family" />
+                  <MenuItem fx:id="backGroundMenuItem" mnemonicParsing="false" onAction="#backGroundMenuItem_handle" text="background color" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutAppMenuItem" mnemonicParsing="false" onAction="#aboutAppMenuItem_handle" text="About app" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="managrProductButton" layoutX="13.0" layoutY="119.0" mnemonicParsing="false" onAction="#managrProductButton_handle" prefHeight="64.0" prefWidth="573.0" style="-fx-background-color: #08535d;" text="Manage Products" textFill="#f2ecec" />
+      <Button fx:id="manageClientsButton" layoutX="12.0" layoutY="305.0" mnemonicParsing="false" onAction="#manageClientsButton_handle" prefHeight="64.0" prefWidth="573.0" style="-fx-background-color: #08535d;" text="Manage Clients" textFill="#f2f0f0" />
+      <Button fx:id="manageOrdersButton" layoutX="13.0" layoutY="212.0" mnemonicParsing="false" onAction="#manageOrdersButton_handle" prefHeight="64.0" prefWidth="573.0" style="-fx-background-color: #08535d;" text="Manage Orders" textFill="#ebeaea" />
+      <Button fx:id="manageInvoicesButton" layoutX="14.0" layoutY="402.0" mnemonicParsing="false" onAction="#manageInvoicesButton_handle" prefHeight="64.0" prefWidth="573.0" style="-fx-background-color: #08535d;" text="Manage Invoices" textFill="#fcf3f3" />
+      <Button fx:id="changePasswordButton" layoutX="14.0" layoutY="496.0" mnemonicParsing="false" onAction="#changePasswordButton_handle" prefHeight="64.0" prefWidth="573.0" style="-fx-background-color: #08535d; -fx-border-radius: 5px;" text="Change Passwords" textAlignment="CENTER" textFill="#f5f2f2" />
+      <Text layoutX="194.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Dashboard" textAlignment="CENTER" wrappingWidth="174.3671875" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="487.0" style="-fx-background-color: #c0c4cf; -fx-font-weight: BOLD; -fx-font-size: 17px; -fx-border-color: #c76b3a; -fx-border-width: 15px; -fx-border-radius: 5px;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbfinal.LoginPageController">
+   <children>
+      <Label layoutX="100.0" layoutY="111.0" prefHeight="33.0" prefWidth="100.0" text=" user name :" />
+      <Label layoutX="100.0" layoutY="187.0" prefHeight="25.0" prefWidth="100.0" text="Password :" />
+      <TextField fx:id="username_text" layoutX="233.0" layoutY="108.0" prefHeight="25.0" prefWidth="183.0" promptText="username@gmail.com" />
+      <TextField fx:id="password_text" layoutX="233.0" layoutY="181.0" prefHeight="25.0" prefWidth="183.0" />
+      <Button fx:id="loginButton" layoutX="100.0" layoutY="265.0" mnemonicParsing="false" onAction="#loginButton_handle" prefHeight="53.0" prefWidth="113.0" text="LOGIN" />
+      <Button fx:id="registerButton" layoutX="268.0" layoutY="265.0" mnemonicParsing="false" onAction="#registerButton_handle" prefHeight="53.0" prefWidth="113.0" text="REGISTER" />
+      <Text layoutX="178.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER" wrappingWidth="131.13671875" />
+   </children>
+</AnchorPane>
